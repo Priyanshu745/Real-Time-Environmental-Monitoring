@@ -5,8 +5,7 @@ import joblib
 import matplotlib.pyplot as plt
 from xgboost import plot_importance
 
-st.title("🌍 Real-Time Environmental Monitoring - PM2.5 Prediction")
-st.write("This application predicts PM2.5 concentration levels using environmental data. Upload your dataset to see predictions and insights.")
+
 # Load trained model and scaler
 model = joblib.load('trained_environmental_model.joblib')
 scaler = joblib.load('scaler.joblib')
