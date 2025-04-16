@@ -5,6 +5,10 @@ import joblib
 import matplotlib.pyplot as plt
 from xgboost import plot_importance
 
+st.set_page_config(
+    page_title="Air Quality Predictor - PM2.5 Insights",
+    page_icon="🌿"
+)
 
 # Load trained model and scaler
 model = joblib.load('trained_environmental_model.joblib')
